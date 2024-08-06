@@ -34,7 +34,7 @@ export const clones = [
         img: luma,
         desc: "",
         skills: ["React", "TailwindCSS", "Javascript",],
-        live: "",
+        live: "https://lu-ma-replica.vercel.app/",
         github: "https://github.com/Ammar-Amin/lu.ma_Replica"
     },
 ]
