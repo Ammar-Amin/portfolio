@@ -1,33 +1,8 @@
 import React from 'react'
 import Dev from './Dev'
-import { FaDiscord, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-
+import { SocialLinks } from '../../constants/SocialLinks'
 
 const Home = () => {
-
-    const socialLinks = [
-        {
-            icon: <FaLinkedin className="w-7 h-7 hover:w-8 hover:h-8 transition-all duration-300" />,
-            href: "https://www.linkedin.com/in/ammar-amin5253",
-        },
-        {
-            icon: <FaXTwitter className="w-7 h-7 hover:w-8 hover:h-8 transition-all duration-300" />,
-            href: "https://x.com/Ammar_Amin007",
-        },
-        {
-            icon: <FaDiscord className="w-7 h-7 hover:w-8 hover:h-8 transition-all duration-300" />,
-            href: "https://discordapp.com/users/xenon072",
-        },
-        {
-            icon: <FaWhatsapp className="w-7 h-7 hover:w-8 hover:h-8 transition-all duration-300" />,
-            href: "https://wa.me/9325416499",
-        },
-        {
-            icon: <FaGithub className="w-7 h-7 hover:w-8 hover:h-8 transition-all duration-300" />,
-            href: "https://github.com/Ammar-Amin",
-        },
-    ]
 
     return (
         <main className='w-full min-h-screen relative'>
@@ -46,8 +21,8 @@ const Home = () => {
                     <Dev />
                 </div>
                 <ul className='w-8 flex flex-col gap-3'>
-                    {socialLinks?.map(item => (
-                        <li>
+                    {SocialLinks?.map(item => (
+                        <li key={item.href}>
                             <a href={item.href} target='_blank'>
                                 {item.icon}
                             </a>
