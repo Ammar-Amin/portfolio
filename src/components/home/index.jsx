@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Dev from './Dev'
 import { SocialLinks } from '../../constants/SocialLinks'
+import About from './About'
 
 const Home = () => {
+
+    const [about, setAbout] = useState(false)
 
     return (
         <main className='w-full min-h-screen relative'>
@@ -16,10 +19,15 @@ const Home = () => {
                 <path transform="translate(280,720)" d="m0 0 4 1-4 2v8l-8-1-10-3v-2z" fill="#FEFEFE" />
             </svg>
             <div className='px-4 md:px-10 w-full max-w-5xl mx-auto h-screen flex justify-between items-center'>
-                <div>
+                <div className='mt-10'>
                     <h1 className='mb-2 text-4xl md:text-6xl font-medium'>Ammar Amin</h1>
                     <Dev />
+                    <div className='mt-3'>
+                        <button onClick={() => setAbout(true)}
+                            className='px-6 py-2 bg-red-500 font-semibold rounded-md text-white'>About Me</button>
+                    </div>
                 </div>
+                {about && <About toggle={setAbout} />}
                 <ul className='w-8 flex flex-col gap-3'>
                     {SocialLinks?.map(item => (
                         <li key={item.href}>
