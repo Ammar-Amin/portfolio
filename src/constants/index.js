@@ -5,15 +5,15 @@ export const mega = [
     {
         title: "AminEstate",
         img: estate,
-        desc: "Amin Estate is the best place to find your next perfect place to live, We have a wide range of properties for you to choose from.",
-        skills: ["MongoDB", "Express.js", "React.js", "Redux", "firebase", "Nodejs", "Insomnia"],
+        desc: "Utilizing MERN stack modern technologies, Implemented advanced authentication using Firebase. Developed real-world CRUD operations to manage property listings with MongoDB.",
+        skills: ["MongoDB", "Express.js", "React.js", "RTK", "firebase", "Nodejs", "Insomnia"],
         live: "https://estate-mern-0kti.onrender.com",
         github: "https://github.com/Ammar-Amin/Estate-MERN"
     },
     {
         title: "Blog Application",
         img: blog,
-        desc: "",
+        desc: "Used React Hook Form for form handling and managed media uploads via Cloudinary. The backend is built with Appwrite, and TinyMCE is used for rich text editing.",
         skills: ["React", "ReactHookForms", "TailwindCss", "Cloudinary", "Appwrite", "Tinymce"],
         live: "https://blog-app-05.netlify.app/",
         github: "https://github.com/Ammar-Amin/Blog-App"
@@ -32,7 +32,7 @@ export const clones = [
     {
         title: "LU.MA Replica",
         img: luma,
-        desc: "",
+        desc: " This project replicates the sleek design and responsive layout of the original site, showcasing my ability to build modern, dynamic interfaces with clean, reusable code.",
         skills: ["React", "TailwindCSS", "Javascript",],
         live: "https://lu-ma-replica.vercel.app/",
         github: "https://github.com/Ammar-Amin/lu.ma_Replica"
@@ -43,18 +43,18 @@ export const normal = [
     {
         title: "Van Dwelling",
         img: van,
-        desc: "",
-        skills: [],
+        desc: "Used MirageJS to simulate API interactions. Demonstrating effective integration of front-end development with mock backend services.",
+        skills: ["React", "react-router-dom", "Miragejs", "CSS", "Jsx"],
         live: "https://van-rental-web.vercel.app/",
         github: "https://github.com/Ammar-Amin/Van-LifeStyle"
     },
     {
         title: "Todo Application",
         img: todo,
-        desc: "",
-        skills: [],
+        desc: "Built with React and RTK for state management, utilizing local storage to persist tasks across sessions.",
+        skills: ["React", "RTK", "TailwindCSS", "LocalStorage"],
         live: "https://quadb-todo.netlify.app/",
-        github: ""
+        github: "https://github.com/Ammar-Amin/React-ToDo-Application/"
     },
 ]
 
@@ -63,15 +63,15 @@ export const basic = [
     {
         title: "Weather App",
         img: weather,
-        desc: "",
-        skills: ["React", "TailwindCSS Components", "OpenWeatherAPI"],
+        desc: "App Powered by the OpenWeatherAPI, delivering real-time weather updates with a clean, responsive interface. Showcasing API integration and dynamic data handling.",
+        skills: ["React", "OpenWeatherAPI"],
         live: "https://weather-forecst.netlify.app",
-        github: "https://github.com/Ammar-Amin/"
+        github: "https://github.com/Ammar-Amin/WeatherApp-vite"
     },
     {
         title: "ATG World UI",
         img: atg,
-        desc: "",
+        desc: "Converted a Figma design into a fully responsive web page using React and Tailwind CSS as part of an internship assignment, translating design into functional code.",
         skills: ["React", "TailwindCSS"],
         live: "https://atg-world-web.netlify.app/",
         github: "https://github.com/Ammar-Amin/ATG-World-UI"
@@ -90,7 +90,7 @@ export const games = [
     {
         title: "Whack a Mole",
         img: mole,
-        desc: "",
+        desc: "Game featuring dynamic gameplay and interactive elements. This project highlights event handling and DOM manipulation skills.",
         skills: ["HTML", "CSS", "Javascript"],
         live: "https://random-mole-generating-game.vercel.app/",
         github: "https://github.com/Ammar-Amin/Random-Mole-Game"
@@ -98,10 +98,10 @@ export const games = [
     {
         title: "Personal Calculator",
         img: cal,
-        desc: "",
+        desc: "This project emphasizes clean design and fundamental JavaScript logic for basic arithmetic operations.",
         skills: ["HTML", "CSS", "Javascript"],
         live: "https://ammars-calculator.netlify.app",
-        github: "https://github.com/Ammar-Amin/"
+        github: "https://github.com/Ammar-Amin/JS-Calculator"
     },
 ]
 
