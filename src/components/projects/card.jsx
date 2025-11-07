@@ -45,15 +45,15 @@ const Card = ({ data }) => {
       <div className="float-end p-6 pt-1 grid grid-cols-2 gap-5">
         <a
           href={data.live}
-          className="text-center py-2 text-white bg-lime-600 rounded-md hover:opacity-80 hover:underline   "
+          className="text-center py-2 text-white bg-lime-600 rounded-md hover:opacity-90   "
         >
-          Live
+          <i className="ri-send-plane-fill mr-1"></i> Live
         </a>
         <a
           href={data.github}
-          className="text-center py-2 text-white bg-teal-700 rounded-md hover:opacity-80 hover:underline  "
+          className="text-center py-2 text-white bg-teal-700 rounded-md hover:opacity-90  "
         >
-          GitHub
+          <i className="ri-github-fill mr-1 text-xl"></i> GitHub
         </a>
       </div>
     </li>

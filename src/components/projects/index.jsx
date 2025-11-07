@@ -3,43 +3,27 @@ import { basic, clones, games, mega } from "../../constants";
 import Card from "./card";
 
 const Projects = () => {
+  const sections = [
+    { title: "Projects", data: mega },
+    { title: "Clones", data: clones },
+    { title: "Games", data: games },
+    { title: "Assignments", data: basic },
+  ];
+
   return (
-    <div className="w-full max-w-7xl mx-auto min-h-screen bg-red-500 rounded-lg pt-3 pb-10 md:pb-16 lg:pb-20">
-      <h1 className="text-center text-4xl md:text-5xl lg:text-6xl py-4 lg:pb-7 font-medium md:mb-3">
-        Projects
-      </h1>
-      <ul className="flex flex-wrap gap-5 lg:gap-10 justify-center">
-        {mega.map((item) => (
-          <Card data={item} key={item.title} />
-        ))}
-      </ul>
-
-      <h1 className="text-center text-4xl md:text-5xl lg:text-6xl py-4 lg:pb-7 font-medium mt-10 md:mb-3">
-        Clones
-      </h1>
-      <ul className="flex flex-wrap gap-5 lg:gap-10 justify-center item-center">
-        {clones.map((item) => (
-          <Card data={item} key={item.title} />
-        ))}
-      </ul>
-
-      <h1 className="text-center text-4xl md:text-5xl lg:text-6xl py-4 lg:pb-7 font-medium mt-10 md:mb-3">
-        Games
-      </h1>
-      <ul className="flex flex-wrap gap-5 lg:gap-10 justify-center item-center">
-        {games.map((item) => (
-          <Card data={item} key={item.title} />
-        ))}
-      </ul>
-
-      <h1 className="text-center text-4xl md:text-5xl lg:text-6xl py-4 lg:pb-7 font-medium mt-10 md:mb-3">
-        Assignments
-      </h1>
-      <ul className="flex flex-wrap gap-5 lg:gap-10 justify-center item-center">
-        {basic.map((item) => (
-          <Card data={item} key={item.title} />
-        ))}
-      </ul>
+    <div className="w-full max-w-7xl mx-auto min-h-screen pt-3 pb-10 md:pb-16 lg:pb-20">
+      {sections.map((section) => (
+        <div key={section.title} className="mb-10 px-4 md:px-10">
+          <h2 className="text-3xl text-center font-semibold mb-6">
+            {section.title}
+          </h2>
+          <ul className="flex flex-wrap gap-6 justify-center">
+            {section.data.map((item) => (
+              <Card key={item.title} data={item} />
+            ))}
+          </ul>
+        </div>
+      ))}
     </div>
   );
 };
