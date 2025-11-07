@@ -42,20 +42,24 @@ const Home = () => {
         />
       </svg>
       <div className="px-4 md:px-10 w-full max-w-5xl mx-auto h-screen flex justify-between items-center">
-        <div className="mt-10">
+        <div className="mt-40">
           <h1 className="mb-2 text-4xl md:text-6xl font-medium">Ammar Amin</h1>
           <Dev />
           <div className="mt-3">
             <button
               onClick={() => setAbout(true)}
-              className="px-6 py-2 bg-red-500 font-semibold rounded-md text-white"
+              className="px-6 py-2 rounded-lg font-semibold text-white 
+             bg-gradient-to-r from-red-500 to-red-700 
+             hover:from-red-600 hover:to-red-800 
+             transition-all duration-300 shadow-md hover:shadow-lg active:scale-95"
             >
+              <i className="ri-user-fill mr-2"></i>
               About Me
             </button>
           </div>
         </div>
         {about && <About toggle={setAbout} />}
-        <ul className="w-8 flex flex-col gap-3">
+        <ul className="mt-40 w-8 flex flex-col gap-3">
           {SocialLinks?.map((item) => (
             <li key={item.href}>
               <a href={item.href} target="_blank">
