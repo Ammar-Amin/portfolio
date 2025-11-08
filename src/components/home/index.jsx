@@ -43,7 +43,10 @@ const Home = () => {
       </svg>
       <div className="px-4 md:px-10 w-full max-w-5xl mx-auto h-screen flex justify-between items-center">
         <div className="mt-40">
-          <h1 className="mb-2 text-4xl md:text-6xl font-medium">Ammar Amin</h1>
+          <h1 className="shine-text mb-2 text-4xl md:text-6xl font-semibold">
+            Ammar Amin
+          </h1>
+
           <Dev />
           <div className="mt-3">
             <button
