@@ -28,7 +28,7 @@ export default function About({ toggle }) {
   return (
     <div
       className={
-        `fixed z-50 h-[82%] w-[95%] max-w-7xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-4 md:p-10 rounded-lg ` +
+        `fixed z-50 h-[82%] w-[95%] max-w-7xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-4 md:p-10 rounded-lg  ` +
         (dark ? "bg-stone-950" : "bg-slate-300")
       }
     >
@@ -56,10 +56,9 @@ export default function About({ toggle }) {
               <span
                 key={item}
                 className={`px-3 py-1 text-xs font-medium rounded-full 
-                  ${
-                    dark
-                      ? "bg-gradient-to-r from-indigo-600 to-purple-600 text-white"
-                      : "bg-gradient-to-r from-indigo-400 to-purple-500 text-white"
+                  ${dark
+                    ? "bg-gradient-to-r from-indigo-600 to-purple-600 text-white"
+                    : "bg-gradient-to-r from-indigo-400 to-purple-500 text-white"
                   }`}
               >
                 {item}

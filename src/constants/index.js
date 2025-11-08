@@ -1,6 +1,27 @@
 import { atg, blog, cal, estate, luma, mole, qid, radiant, todo, van, weather } from "../assets"
 
 
+export const tech = [
+    "Javascript",
+    "React",
+    "ContextAPI",
+    "Redux",
+    "ReduxToolkit",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+    "Firebase",
+    "Cloudinary",
+    "Appwrite",
+    "Git",
+    "Github",
+    "TailwindCSS",
+    "Bootstrap",
+    "HTML",
+    "CSS",
+];
+
 export const mega = [
     {
         title: "AminEstate",
@@ -57,7 +78,6 @@ export const normal = [
         github: "https://github.com/Ammar-Amin/React-ToDo-Application/"
     },
 ]
-
 
 export const basic = [
     {
