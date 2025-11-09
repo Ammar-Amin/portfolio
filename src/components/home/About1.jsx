@@ -6,7 +6,7 @@ const About1 = () => {
     const [dark] = useDark();
     return (
 
-        <div className={'min-h-screen flex items-center ' +
+        <div id='about' className={'min-h-screen flex items-center ' +
             (dark ? "bg-stone-950" : "bg-slate-300")}
         >
             <div className="w-full max-w-7xl mx-auto lg:flex lg:gap-3 justify-center items-center  p-4 pb-12 md:p-10 ">

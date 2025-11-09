@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import Dev from "./Dev";
 import { SocialLinks } from "../../constants/SocialLinks";
-import About from "./About";
+// import About from "./About";
 
 const Home = () => {
-  const [about, setAbout] = useState(false);
+  // const [about, setAbout] = useState(false);
+
+  const scrollToAbout = () => {
+    const section = document.getElementById('about')
+    section?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <main className="w-full min-h-screen relative">
@@ -43,14 +48,14 @@ const Home = () => {
       </svg>
       <div className="px-4 md:px-10 w-full max-w-5xl mx-auto h-screen flex justify-between items-center">
         <div className="mt-40">
-          <h1 className="shine-text mb-2 text-4xl md:text-6xl font-semibold">
+          <h2 className="shine-text mb-2 text-4xl md:text-6xl font-semibold">
             Ammar Amin
-          </h1>
+          </h2>
 
           <Dev />
           <div className="mt-3">
             <button
-              onClick={() => setAbout(true)}
+              onClick={() => scrollToAbout()}
               className="px-6 py-2 rounded-lg font-semibold text-white 
              bg-gradient-to-r from-red-500 to-red-700 
              hover:from-red-600 hover:to-red-800 
@@ -61,7 +66,7 @@ const Home = () => {
             </button>
           </div>
         </div>
-        {about && <About toggle={setAbout} />}
+        {/* {about && <About toggle={setAbout} />} */}
         <ul className="mt-40 w-8 flex flex-col gap-3">
           {SocialLinks?.map((item) => (
             <li key={item.href}>
