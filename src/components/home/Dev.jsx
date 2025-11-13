@@ -17,7 +17,7 @@ export default function Dev() {
       ]}
       wrapper="span"
       speed={3}
-      className="md:text-xl lg:text-2xl font-bold"
+      className="md:text-xl lg:text-2xl font-semibold"
       repeat={Infinity}
     />
   );
